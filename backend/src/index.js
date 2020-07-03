@@ -1,11 +1,15 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+const express = require("express");
+const bodyParser = require("body-parser");
 
 const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-require('./app/controllers/index')(app);
+app.get("/", (req, res) => {
+  res.send("lol");
+});
 
-app.listen(3000)
+require("./app/controllers/index")(app); //todos os controllers criados sao importados automaticamente
+
+app.listen(3000);
