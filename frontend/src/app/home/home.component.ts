@@ -12,24 +12,7 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    this.items = [
-      {label: 'Meu Perfil', icon: 'pi pi-user', routerLink: ['#']},
-      {label: 'Alterar Senha', icon: 'pi pi-key', routerLink: ['#']},
-      {label: 'Sair', icon: 'pi pi-sign-out', routerLink: ['#']}
-  ];
-  };
+  ngOnInit(): void { };
 
-  save() {
-
-    }
-
-  update() {
-      
-    }
-
-  delete() {
-      
-    }
-
+  visibleSidebar1;
 }

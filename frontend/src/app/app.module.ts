@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SplitButtonModule } from 'primeng/splitbutton';
+import { SidebarModule } from 'primeng/sidebar';
 import { CardModule } from 'primeng/card';
 
 @NgModule({
@@ -18,9 +19,11 @@ import { CardModule } from 'primeng/card';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CardModule,
-    SplitButtonModule,
     BrowserAnimationsModule,
+    SplitButtonModule,
+    SidebarModule,
+    CardModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
