@@ -7,5 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent{
   title = '';
+  mostrarBarra = true;
+  visibleSidebar1;
 
+  barra(){
+    if (this.mostrarBarra){
+      this.mostrarBarra = false;
+    }else{
+      this.mostrarBarra = true;
+    }
+    console.log(this.mostrarBarra)
+  }
 }

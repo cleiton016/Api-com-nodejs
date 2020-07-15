@@ -9,11 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { SidebarModule } from 'primeng/sidebar';
 import { CardModule } from 'primeng/card';
+import { PerfilComponent } from './perfil/perfil.component';
+import { AutenticacaoComponent } from './autenticacao/autenticacao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    PerfilComponent,
+    AutenticacaoComponent,
     
   ],
   imports: [
